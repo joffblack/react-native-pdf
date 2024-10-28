@@ -412,6 +412,8 @@ export default class PdfView extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        borderColor: 'green',
+        borderWidth: 5,
     }
 });

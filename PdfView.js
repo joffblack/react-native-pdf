@@ -8,7 +8,7 @@
 
 'use strict';
 import React, {Component} from 'react';
-import {ScrollView, View, StyleSheet} from 'react-native';
+import {ScrollView, View, StyleSheet, Text} from 'react-native';
 import {ViewPropTypes} from 'deprecated-react-native-prop-types';
 import PropTypes from 'prop-types';
 
@@ -343,6 +343,8 @@ export default class PdfView extends Component {
         }
 
         return (
+            <>
+            <Text style={{color: 'black'}}>TESTING</Text>
             <PdfViewFlatList
                 ref={this._getRef}
                 style={[styles.container, this.props.style]}
@@ -370,6 +372,8 @@ export default class PdfView extends Component {
                 onContentSizeChange={this._onListContentSizeChange}
                 scrollEnabled={!this.props.singlePage}
             />
+            </>
+            
         );
 
     };
